@@ -1,8 +1,10 @@
 {
+  "buildCommand": "pip install -r requirements.txt && python manage.py collectstatic --noinput",
+  "outputDirectory": "staticfiles",
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "index.py"
+      "dest": "python_vercel_task/wsgi.py"
     }
   ]
 }
